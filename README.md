@@ -1,8 +1,7 @@
 # Question Answering with SQuAD
 
-The goal of this project was for me to get familiar with the Question Answering task, a very active topic in NLP research.
 
-To this end, I implemented a Bidirectional Attention Flow neural network as a baseline, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/models.py), adding word-character inputs as described in the original paper.
+Implemented a Bidirectional Attention Flow neural network as a baseline, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/models.py), adding word-character inputs as described in the original paper.
 
 I found this project very useful from a learning perspective so I highly recommend you to dig into the code and work on improving this baseline.
 
