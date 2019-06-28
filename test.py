@@ -51,7 +51,7 @@ if not os.path.exists(experiment_path):
 writer = SummaryWriter(experiment_path)
 
 # open features file and store them in individual variables
-dev_features = np.load(os.path.join(config.dev_dir, "dev_features.npz"))
+dev_features = np.load(os.path.join(config.dev_dir, "dev_features.npz"), allow_pickle=True)
 d_w_context, d_c_context, d_w_question, d_c_question, d_labels = dev_features["context_idxs"],\
                                                                  dev_features["context_char_idxs"],\
                                                                  dev_features["question_idxs"],\

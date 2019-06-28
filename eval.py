@@ -100,20 +100,20 @@ def eval(context, question):
 
 
 if __name__ == "__main__":
-    context = "Rafael Nadal was born in Manacor, a town on the island of Mallorca in the Balearic Islands," \
-              " Spain to parents Ana María Parera and Sebastián Nadal. His father is a businessman, owner of an" \
-              " insurance company, glass and window company Vidres Mallorca, and a restaurant, Sa Punta. Rafael has a" \
-              " younger sister, María Isabel. His uncle, Miguel Ángel Nadal, is a retired professional footballer," \
-              " who played for RCD Mallorca, FC Barcelona, and the Spanish national team. He idolized Barcelona striker" \
-              " Ronaldo as a child, and via his uncle got access to the Barcelona dressing room to have a photo with" \
-              " the Brazilian. Nadal supports football clubs Real Madrid and RCD Mallorca. Recognizing in Rafael a" \
-              " natural talent, another uncle, Toni Nadal, a former professional tennis player, introduced him to" \
-              " tennis when he was three years old."
+    context = " Our narrator, Nick Carraway, moves to the East Coast to work as a bond trader in Manhattan. He rents a small house in West Egg, a nouveau riche town in Long Island. " \
+              "In East Egg, the next town over, where old money people live, Nick reconnects with his cousin Daisy Buchanan, her husband Tom, and meets their friend Jordan Baker." \
+              "Tom takes Nick to meet his mistress, Myrtle Wilson. Myrtle is married to George Wilson, who runs a gas station in a gross and dirty neighborhood in Queens. Tom, Nick, and Myrtle go to Manhattan, where she hosts a small party that ends with Tom punching her in the face." \
+              "Nick meets his next-door neighbor, Jay Gatsby, a very rich man who lives in a giant mansion and throws wildly extravagant parties every weekend, and who is a mysterious person no one knows much about." \
+              "Gatsby takes Nick to lunch and introduces him to his business partner - a gangster named Meyer Wolfshiem." \
+              "Nick starts a relationship with Jordan. Through her, Nick finds out that Gatsby and Daisy were in love five years ago, and that Gatsby would like to see her again." \
+              "Nick arranges for Daisy to come over to his house so that Gatsby can “accidentally” drop by. Daisy and Gatsby start having an affair." \
+              "Tom and Daisy come to one of Gatsby’s parties. Daisy is disgusted by the ostentatiously vulgar display of wealth, and Tom immediately sees that Gatsby’s money most likely comes from crime." \
+              "We learn that Gatsby was born into a poor farming family as James Gatz. He has always been extremely ambitious, creating the Jay Gatsby persona as a way of transforming himself into a successful self-made man - the ideal of the American Dream."
 
-    questions = ["Where was born Rafael Nadal?", "Who is Rafael Nadal's sister?",
-                 "Who introduced Rafael Nadal to tennis?",
-                 "When was Rafael Nadal introduced to tennis?",
-                 "What striker was Rafael Nadal's idol?"]
+    questions = ["Who is the narrator?",
+                 "Where Gatsby takes Nick?",
+                 "With whom Nick starts relationship?",
+                 "Where Gatsby was born?"]
 
     print("C:", context, "\n")
     for q in questions:

@@ -1,8 +1,3 @@
-"""Assortment of layers for use in models.py.
-Author:
-    Chris Chute (chute@stanford.edu)
-"""
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
