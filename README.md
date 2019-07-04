@@ -1,6 +1,5 @@
 # Question Answering with SQuAD Dataset using BiDAF model
 
-
 Implemented a Bidirectional Attention Flow neural network as a baseline, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/blob/master/layers.py), adding word-character inputs as described in the original paper and improving [GauthierDmns' code](https://github.com/GauthierDmn/question_answering).
 
 You can reproduce the work following the Set-Up section, and potentially (recommended!) train the model on a single GPU setting the `cuda` variable in `config.py` to `True`.
@@ -76,8 +75,18 @@ Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova : https://arxiv.org
 * BiDAF baseline model: https://github.com/chrischute/squad
 * PyTorch pretrained BERT: https://github.com/huggingface/pytorch-pretrained-BERT
 * GloVE: https://nlp.stanford.edu/projects/glove/
-
 * **Papers With Code** 
     - SQuAD: 100,000+ Questions for Machine Comprehension of Text: https://paperswithcode.com/paper/squad-100000-questions-for-machine
     - Bidirectional Attention Flow for Machine Comprehension : https://paperswithcode.com/paper/bidirectional-attention-flow-for-machine
+* Understanding LSTM Networks: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+* A Brief Overview of Attention Mechanism: https://medium.com/syncedreview/a-brief-overview-of-attention-mechanism-13c578ba9129
+* Understanding Encoder-Decoder Sequence to Sequence Model: https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346
 * Semantic Word Embeddings: https://www.offconvex.org/2015/12/12/word-embeddings-1/
+* Question Answering in Natural Language Processing [Part-I]: https://medium.com/lingvo-masino/question-and-answering-in-natural-language-processing-part-i-168f00291856
+* Building a Question-Answering System from Scratch— Part 1: https://towardsdatascience.com/building-a-question-answering-system-part-1-9388aadff507
+* NLP — Building a Question Answering model: https://towardsdatascience.com/nlp-building-a-question-answering-model-ed0529a68c54
+* F1 score: https://en.wikipedia.org/wiki/F1_score
+
+# Problems that can be
+
+- [Pytorch Tip: Yielding Image Sizes[(https://medium.com/@yvanscher/pytorch-tip-yielding-image-sizes-6a776eb4115b)
