@@ -1,9 +1,7 @@
-# Question Answering with SQuAD
+# Question Answering with SQuAD Dataset using BiDAF model
 
 
 Implemented a Bidirectional Attention Flow neural network as a baseline, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/blob/master/layers.py), adding word-character inputs as described in the original paper and improving [GauthierDmns' code](https://github.com/GauthierDmn/question_answering).
-
-I found this project very useful from a learning perspective so I highly recommend you to dig into the code and work on improving this baseline.
 
 You can reproduce the work following the Set-Up section, and potentially (recommended!) train the model on a single GPU setting the `cuda` variable in `config.py` to `True`.
 
@@ -11,6 +9,10 @@ You can reproduce the work following the Set-Up section, and potentially (recomm
 
 ![BiDAF Architecture](bidaf-architecture.png)
 Source: [BiDAF paper](https://arxiv.org/abs/1611.01603)
+
+# Requirements
+
+- `Python 3.6`
 
 # Code Organization
 
@@ -35,7 +37,6 @@ Exact-Match and F1 Score on Validation set after training:
 | ----|:---:|
 | 0.64| 0.75|
 
-
 # Set-Up
 
 * Clone the repository
@@ -56,9 +57,17 @@ Exact-Match and F1 Score on Validation set after training:
 - [ ] add the ability to train the model on multiple GPUs, and offer half-precision training to speed-up the training
 - [ ] improve this baseline using pre-training encoding such as BERT, and/or set-up a multi-task learning pipeline to jointly learn to answer questions together with another closely related NLP task.
 
-# Resources
+# Useful Articles 
 
-* SQuAD dataset: https://arxiv.org/abs/1606.05250
+- SQuAD:
+  - [SQuAD: 100,000+ Questions for Machine Comprehension of Text, 2016](https://arxiv.org/abs/1606.05250): https://arxiv.org/pdf/1606.05250.pdf
+  - [Know What You Don’t Know: Unanswerable Questions for SQuAD, 2018](https://arxiv.org/abs/1806.03822): https://arxiv.org/pdf/1806.03822.pdf
+- [BiDAF]()
+- [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf)
+
+# Useful Links
+
+* SQuAD 2.0 dataset : https://rajpurkar.github.io/SQuAD-explorer/
 * Bidirectional Attention Flow for Machine Comprehension"
 by Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, Hannaneh Hajishirzi : https://arxiv.org/abs/1611.01603
 * Authors' TensorFlow implementation: https://allenai.github.io/bi-att-flow/
@@ -67,3 +76,8 @@ Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova : https://arxiv.org
 * BiDAF baseline model: https://github.com/chrischute/squad
 * PyTorch pretrained BERT: https://github.com/huggingface/pytorch-pretrained-BERT
 * GloVE: https://nlp.stanford.edu/projects/glove/
+
+* **Papers With Code** 
+    - SQuAD: 100,000+ Questions for Machine Comprehension of Text: https://paperswithcode.com/paper/squad-100000-questions-for-machine
+    - Bidirectional Attention Flow for Machine Comprehension : https://paperswithcode.com/paper/bidirectional-attention-flow-for-machine
+* Semantic Word Embeddings: https://www.offconvex.org/2015/12/12/word-embeddings-1/
