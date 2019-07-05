@@ -94,4 +94,4 @@ Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova](https://arxiv.org/
 
 # Problems that can be
 
-- [Pytorch Tip: Yielding Image Sizes[(https://medium.com/@yvanscher/pytorch-tip-yielding-image-sizes-6a776eb4115b)
+- [Pytorch Tip: Yielding Image Sizes](https://medium.com/@yvanscher/pytorch-tip-yielding-image-sizes-6a776eb4115b)
