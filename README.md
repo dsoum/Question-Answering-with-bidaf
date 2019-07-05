@@ -1,8 +1,14 @@
-# Question Answering with SQuAD Dataset using BiDAF model
+# Question Answering with SQuAD using BiDAF model
 
 Implemented a Bidirectional Attention Flow neural network as a baseline, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/blob/master/layers.py), adding word-character inputs as described in the original paper and improving [GauthierDmns' code](https://github.com/GauthierDmn/question_answering).
 
 You can reproduce the work following the Set-Up section, and potentially (recommended!) train the model on a single GPU setting the `cuda` variable in `config.py` to `True`.
+
+# SQuAD 
+
+Question-answer pairs for a sample passage in the SQuAD dataset. Each of the answers is a segment of text from the passage.
+- Sample from [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/)
+![SQuAD-2](SQuAD-2.png)
 
 # Model Architecture
 
@@ -61,17 +67,16 @@ Exact-Match and F1 Score on Validation set after training:
 - SQuAD:
   - [SQuAD: 100,000+ Questions for Machine Comprehension of Text, 2016](https://arxiv.org/abs/1606.05250): https://arxiv.org/pdf/1606.05250.pdf
   - [Know What You Don’t Know: Unanswerable Questions for SQuAD, 2018](https://arxiv.org/abs/1806.03822): https://arxiv.org/pdf/1806.03822.pdf
-- [BiDAF]()
+- [BiDAF](https://arxiv.org/abs/1611.01603): https://arxiv.org/pdf/1611.01603.pdf
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova](https://arxiv.org/abs/1810.04805)
 - [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf)
 
 # Useful Links
 
-* SQuAD 2.0 dataset : https://rajpurkar.github.io/SQuAD-explorer/
-* Bidirectional Attention Flow for Machine Comprehension"
-by Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, Hannaneh Hajishirzi : https://arxiv.org/abs/1611.01603
-* Authors' TensorFlow implementation: https://allenai.github.io/bi-att-flow/
-* BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
-Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova : https://arxiv.org/abs/1810.04805
+* SQuAD 2.0: https://rajpurkar.github.io/SQuAD-explorer/
+* Bi-Directional Attention Flow for Machine Comprehension
+    - Authors' TensorFlow implementation: https://allenai.github.io/bi-att-flow/
 * BiDAF baseline model: https://github.com/chrischute/squad
 * PyTorch pretrained BERT: https://github.com/huggingface/pytorch-pretrained-BERT
 * GloVE: https://nlp.stanford.edu/projects/glove/
