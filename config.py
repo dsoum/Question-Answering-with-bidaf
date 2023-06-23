@@ -2,7 +2,8 @@
 exp = "exp-1"
 
 # data directories
-data_dir = "/Users/elizabethlorelei/Documents/Programming/Test/Question_Answ_Syst/SquAD/"
+#data_dir = "/Users/elizabethlorelei/Documents/Programming/Test/Question_Answ_Syst/SquAD/"
+data_dir = "SQuAD/"
 train_dir = data_dir + "train/"
 dev_dir = data_dir + "dev/"
 
@@ -28,5 +29,6 @@ hidden_size = 100
 char_channel_width = 5
 char_channel_size = 100
 #cuda = True
-cuda = False
+import torch
+cuda = torch.cuda.is_available()
 pretrained = False

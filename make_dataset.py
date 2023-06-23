@@ -222,6 +222,7 @@ if __name__ == "__main__":
     maybe_download_squad(url, dev_filename, config.data_dir)
 
     p = SquadPreprocessor(config.data_dir, train_filename, dev_filename, tokenizer)
+
     p.preprocess()
 
     p.extract_features(max_len_context=config.max_len_context, max_len_question=config.max_len_question,
